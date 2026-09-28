@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="timer-container">
+
+        <div class="timer">
+            00:00:00
+        </div>
+
+        <div class="date-time-container">
+            <div class="date"></div>
+            <div class="current-time"></div>
+        </div>
+
+        <div class="buttons">
+            <button id="startPauseButton">Start</button>
+            <button id="resetButton">Reset</button>
+            <button id="saveButton">Save</button>
+        </div>
+
+        <div class="history-button-container">
+            <button id="historyButton">History</button>
+        </div>
+
+        <div class="history" id="historySection">
+
+            <h2>Study Statistics</h2>
+
+            <div class="statistics">
+
+                <div class="stat-box">
+                    <h3>Today</h3>
+                    <div id="todayTotal">00:00:00</div>
+                    <p id="todaySessions">0 sessions</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>This Week</h3>
+                    <div id="weekTotal">00:00:00</div>
+                    <p id="weekSessions">0 sessions</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>This Month</h3>
+                    <div id="monthTotal">00:00:00</div>
+                    <p id="monthSessions">0 sessions</p>
+                </div>
+
+            </div>
+
+            <h2>Study History</h2>
+
+            <div id="historyList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
